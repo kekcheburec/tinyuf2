@@ -135,12 +135,20 @@ STATIC_ASSERT(FAT_ENTRIES_PER_SECTOR                       ==       256); // FAT
 #define UF2_SECTOR_COUNT                (_flash_size / UF2_FIRMWARE_BYTES_PER_SECTOR)
 #define UF2_BYTE_COUNT                  (UF2_SECTOR_COUNT * BPB_SECTOR_SIZE) // always a multiple of sector size, per UF2 spec
 
-
+#if !defined(UF2_DESCRIPTION)
 const char infoUf2File[] =
     "TinyUF2 Bootloader " UF2_VERSION "\r\n"
     "Model: " UF2_PRODUCT_NAME "\r\n"
     "Board-ID: " UF2_BOARD_ID "\r\n"
     "Date: " COMPILE_DATE "\r\n";
+#else
+const char infoUf2File[] =
+    "TinyUF2 Bootloader " UF2_VERSION "\r\n"
+    "Model: " UF2_PRODUCT_NAME "\r\n"
+    "Board-ID: " UF2_BOARD_ID "\r\n"
+    "Date: " COMPILE_DATE "\r\n"
+    "Description: " UF2_DESCRIPTION "\r\n";
+#endif
 
 const char indexFile[] =
     "<!doctype html>\n"
