@@ -65,8 +65,8 @@
 #define USB_PRODUCT       "IskraJS Mini"
 
 #define UF2_PRODUCT_NAME  USB_MANUFACTURER " " USB_PRODUCT
-#define UF2_BOARD_ID      "STM32F405-IskraJS-Mini"
-#define UF2_VOLUME_LABEL  "IskraJSBOOT"
+#define UF2_BOARD_ID      "STM32F411-IskraJS-Mini"
+#define UF2_VOLUME_LABEL  "IskraJSMini"
 #define UF2_INDEX_URL     "https://amperka.ru/product/iskra-js-mini"
 #define UF2_DESCRIPTION   "Для обновления прошивки, скопируйте файл с расширением UF2 на диск IskraJSBOOT"
 
