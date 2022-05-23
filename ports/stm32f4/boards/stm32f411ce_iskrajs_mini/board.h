@@ -31,7 +31,7 @@
 //--------------------------------------------------------------------+
 
 #define LED_PORT              GPIOB
-#define LED_PIN               GPIO_PIN_7
+#define LED_PIN               GPIO_PIN_12
 #define LED_STATE_ON          1
 
 //--------------------------------------------------------------------+
@@ -48,6 +48,8 @@
 // Flash size of the board
 #define BOARD_FLASH_SIZE      (512 * 1024)
 #define BOARD_FLASH_SECTORS   8
+
+#define CUSTOM_BOARD_FLASH_APP_START 0x08008000
 
 //--------------------------------------------------------------------+
 // Security (future)
@@ -68,7 +70,7 @@
 #define UF2_BOARD_ID      "STM32F411-IskraJS-Mini"
 #define UF2_VOLUME_LABEL  "IskraJSMini"
 #define UF2_INDEX_URL     "https://amperka.ru/product/iskra-js-mini"
-#define UF2_DESCRIPTION   "Для обновления прошивки, скопируйте файл с расширением UF2 на диск IskraJSBOOT"
+#define UF2_DESCRIPTION   "Для обновления прошивки, скопируйте файл с расширением UF2 на диск " UF2_VOLUME_LABEL
 
 #define USB_NO_VBUS_PIN   1
 

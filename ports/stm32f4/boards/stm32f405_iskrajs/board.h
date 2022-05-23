@@ -52,6 +52,8 @@
 // Flash size of the board
 #define BOARD_FLASH_SIZE  (1024 * 1024)
 
+#define CUSTOM_BOARD_FLASH_APP_START 0x08008000
+
 //--------------------------------------------------------------------+
 // Security (future)
 //--------------------------------------------------------------------+
@@ -71,7 +73,7 @@
 #define UF2_BOARD_ID      "STM32F405-IskraJS"
 #define UF2_VOLUME_LABEL  "IskraJSBOOT"
 #define UF2_INDEX_URL     "https://amperka.ru/product/iskra-js"
-#define UF2_DESCRIPTION   "Для обновления прошивки, скопируйте файл с расширением UF2 на диск IskraJSBOOT"
+#define UF2_DESCRIPTION   "Для обновления прошивки, скопируйте файл с расширением UF2 на диск " UF2_VOLUME_LABEL
 
 //--------------------------------------------------------------------+
 // UART
